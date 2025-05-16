@@ -7,9 +7,7 @@ public class DetectBurbuja : MonoBehaviour
     private SpriteRenderer burbujaSp;
     private CircleCollider2D circleCollider2D;
 
-    private void Start()
-    {
-
+    private void Start() {
         GameObject parentBurbuja = GameObject.FindGameObjectWithTag("Galleta");
         rbGalleta = parentBurbuja.GetComponent<Rigidbody2D>();
 

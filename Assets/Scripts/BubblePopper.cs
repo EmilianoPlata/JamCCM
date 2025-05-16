@@ -21,10 +21,11 @@ public class BubblePopper : MonoBehaviour {
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
             if (hit.collider != null)
             {
-                if (hit.collider.CompareTag("Burbuja"))
+                if (hit.collider.CompareTag("BurbujaPonchar"))
                 {
                     // Destruye la burbuja al colisionar
                     rbGalleta.gravityScale = 1;
+                    burbujaSp.enabled = false;
                     Destroy(hit.collider.gameObject);
                 }
             }
