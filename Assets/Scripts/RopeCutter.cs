@@ -10,8 +10,6 @@ public class RopeCutter : MonoBehaviour
             {
                 if (hit.collider.CompareTag("Link"))
                 {
-
-
                     // Destruir una
                     Destroy(hit.collider.gameObject);
                     // Destruir toda la cuerda 
