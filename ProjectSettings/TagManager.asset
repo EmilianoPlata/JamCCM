@@ -7,6 +7,9 @@ TagManager:
   - Galleta
   - Link
   - Personaje
+  - Punto
+  - Burbuja
+  - BurbujaPonchar
   layers:
   - Default
   - TransparentFX
