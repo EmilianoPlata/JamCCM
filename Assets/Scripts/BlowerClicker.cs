@@ -8,6 +8,7 @@ public class BlowerController : MonoBehaviour
     private CircleCollider2D colliderGalleta; 
     private GameObject blowerArea;
     private GameObject galleta;
+    private float direccion;
 
     [Header("Configuración de Fuerza")]
     [SerializeField] private float fuerzaSoplado = 10f; // Ajustable en el Inspector
@@ -38,10 +39,16 @@ public class BlowerController : MonoBehaviour
         }
     }
 
-    private void AplicarFuerza()
-    {
-        // Determina la dirección del blower (derecha=1, izquierda=-1)
-        float direccion = Mathf.Sign(-blower.transform.localScale.x);
+    private void AplicarFuerza() {
+        if (blowerArea.tag == "BlowAreaIzq")
+        {
+            direccion = Mathf.Sign(-blower.transform.localScale.x);
+            
+        }
+        else if (blowerArea.tag == "BlowAreaDer")
+        {
+            direccion = Mathf.Sign(blower.transform.localScale.x);
+        }       
         
         // Aplica fuerza en el eje X
         Vector2 fuerza = new Vector2(fuerzaSoplado * direccion, 0);

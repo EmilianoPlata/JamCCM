@@ -10,9 +10,10 @@ TagManager:
   - Punto
   - Burbuja
   - BurbujaPonchar
-  - BlowerClicker
   - BlowArea
   - Blower
+  - BlowAreaIzq
+  - BlowAreaDer
   layers:
   - Default
   - TransparentFX

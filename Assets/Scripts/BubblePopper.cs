@@ -1,6 +1,7 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 public class BubblePopper : MonoBehaviour {
-
+    private string nameScene;
     private GameObject burbuja;
     private Rigidbody2D rbGalleta;
     private SpriteRenderer burbujaSp;
@@ -12,6 +13,7 @@ public class BubblePopper : MonoBehaviour {
 
         burbuja = parentBurbuja.transform.GetChild(0).gameObject;
         burbujaSp = burbuja.GetComponent<SpriteRenderer>();
+        nameScene = SceneManager.GetActiveScene().name;
     }
 
     void Update()
@@ -25,6 +27,7 @@ public class BubblePopper : MonoBehaviour {
                 {
                     // Destruye la burbuja al colisionar
                     rbGalleta.gravityScale = 1;
+                    rbGalleta.linearDamping = 0.1f;
                     burbujaSp.enabled = false;
                     Destroy(hit.collider.gameObject);
                 }
