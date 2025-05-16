@@ -8,6 +8,33 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PantallaInicio.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/WalkthroughtGameScenes/Nivel1.unity
+    guid: cb8c4b9dd1736da4da9b9280eb2b3d02
+  - enabled: 1
+    path: Assets/Scenes/WalkthroughtGameScenes/Nivel2.unity
+    guid: f14ffd298eca429488d57c4ccc67c686
+  - enabled: 1
+    path: Assets/Scenes/WalkthroughtGameScenes/Nivel3.unity
+    guid: 39d001dc115278f419b1bb071ac1b326
+  - enabled: 1
+    path: Assets/Scenes/WalkthroughtGameScenes/Nivel4.unity
+    guid: bbe4f684a4cf51e489ad80013400a110
+  - enabled: 1
+    path: Assets/Scenes/WalkthroughtGameScenes/Nivel5.unity
+    guid: 7d6afc1ead1dfb34ebd5ba68538ffe0b
+  - enabled: 1
+    path: Assets/Scenes/WalkthroughtGameScenes/Nivel6.unity
+    guid: d530560b8a98a4f43bf6ed32e9b42487
+  - enabled: 1
+    path: Assets/Scenes/WalkthroughtGameScenes/Nivel7.unity
+    guid: 0be7c92dff48ece428888d5f7d7f0947
+  - enabled: 1
+    path: Assets/Scenes/WalkthroughtGameScenes/Nivel8.unity
+    guid: c9d161fa96da548428383858c9ff546b
+  - enabled: 1
+    path: Assets/Scenes/WalkthroughtGameScenes/Nivel9.unity
+    guid: 7a80e0e41e921464da5f0e4652dc0293
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
