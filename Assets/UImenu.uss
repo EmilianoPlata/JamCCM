@@ -1,0 +1,78 @@
+.contenedorPrincipal {
+}
+
+.logoTriki {
+    background-image: url("project://database/Assets/Imagenes/TrikiTrakatelas.png?fileID=2800000&guid=65b40b0f8b8890f4f94ea7fd8cd42a19&type=3#TrikiTrakatelas");
+}
+
+.boton {
+    background-image: url("project://database/Assets/SimplePixelUI/artwork/halfcustomizible/rounded/buttons/button2_rounded_HCC.png?fileID=2800000&guid=e4047f1078050064dbc10bd5a407974a&type=3#button2_rounded_HCC");
+    width: 400px;
+    height: 150px;
+    -unity-background-image-tint-color: rgb(114, 186, 108);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    align-self: center;
+    -unity-font-definition: url("project://database/Assets/SimplePixelUI/fonts/Font1/pixelfont.ttf?fileID=12800000&guid=b6349d08a5335cd4aa534282435d11cc&type=3#pixelfont");
+    color: rgb(255, 255, 255);
+    -unity-text-outline-width: 4px;
+    -unity-text-outline-color: rgb(0, 0, 0);
+    font-size: 60px;
+}
+
+.boton:hover {
+    scale: 1.2 1.2;
+    transition-timing-function: ease-in-out;
+    cursor: url("project://database/Assets/Imagenes/Dona.png?fileID=2800000&guid=6e41d632b3f1ccd41a536df0c2841da5&type=3#Dona");
+}
+
+.boton:active {
+    -unity-background-image-tint-color: rgb(136, 122, 122);
+}
+
+.logoTriki:hover {
+    transition-timing-function: ease-in-out;
+    scale: 1.2 1.2;
+    cursor: url("project://database/Assets/Imagenes/Chocoreta.png?fileID=2800000&guid=fbde959d440651c449bf80fb5bca6290&type=3#Chocoreta");
+}
+
+.belowCointainer {
+    justify-content: flex-end;
+}
+
+.creditButton {
+    background-image: url("project://database/Assets/SimplePixelUI/artwork/colorCustomizible/rounded/buttons/button2_rounded_CC.png?fileID=2800000&guid=145f9f42fbe978947a25b213c84e7c2b&type=3#button2_rounded_CC");
+    width: 210px;
+    height: 100px;
+    background-size: 100% 100%;
+    -unity-background-image-tint-color: rgb(136, 134, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 18px;
+    -unity-font-definition: url("project://database/Assets/SimplePixelUI/fonts/Font1/pixelfont.ttf?fileID=12800000&guid=b6349d08a5335cd4aa534282435d11cc&type=3#pixelfont");
+    -unity-text-outline-width: 1px;
+    -unity-text-outline-color: rgb(0, 0, 0);
+    -unity-text-align: upper-right;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.belowCointainer {
+    justify-content: flex-end;
+}
+
+.creditButton:hover {
+    transition-timing-function: ease-in-out;
+    scale: 1.2 1.2;
+    cursor: url("project://database/Assets/Imagenes/Chocoreta.png?fileID=2800000&guid=fbde959d440651c449bf80fb5bca6290&type=3#Chocoreta");
+}
+
+.creditButton:active {
+    -unity-background-image-tint-color: rgb(38, 34, 34);
+    background-color: rgba(101, 89, 89, 0);
+}

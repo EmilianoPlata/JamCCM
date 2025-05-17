@@ -1,0 +1,13 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UImenu.uss?fileID=7433441132597879392&amp;guid=9598075fc2f6b834daf6060b4563b6ad&amp;type=3#UImenu" />
+    <engine:VisualElement name="ContenedorPrincipal" class="contenedorPrincipal" style="flex-grow: 1;">
+        <engine:VisualElement name="LogoTriki" class="logoTriki" style="flex-grow: 1; width: 1200px; height: 600px; max-height: 700px; max-width: 1200px; align-self: center;" />
+        <engine:VisualElement name="ContenedorBotones" style="flex-grow: 1; justify-content: space-around;">
+            <engine:Button text="Jugar" name="PlayButton" class="boton" />
+            <engine:Button text="Button" name="Button" class="boton" />
+        </engine:VisualElement>
+        <engine:VisualElement name="BelowContainer" class="belowCointainer" style="flex-grow: 1;">
+            <engine:Button text="Creditos" name="Credits" icon-image="project://database/Assets/SimplePixelUI/artwork/icons/icons_color_customizible.png?fileID=-4598059474086584248&amp;guid=2a01691a87fedbe4aa6de6f1c0c0f3d4&amp;type=3#isonswhite2_26" triple-click-selects-line="false" display-tooltip-when-elided="false" class="creditButton" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>
