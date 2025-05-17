@@ -1,0 +1,6 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UICreditos.uss?fileID=7433441132597879392&amp;guid=c619fe7e0f8b1e24d8f9d9f6c2020c49&amp;type=3#UICreditos" />
+    <engine:VisualElement name="ContenedorPrincipal" style="flex-grow: 1;">
+        <engine:VisualElement name="CreditosContenedor" class="contenedorCreditos" style="flex-grow: 1;" />
+    </engine:VisualElement>
+</engine:UXML>
