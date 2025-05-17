@@ -1,18 +1,18 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class ImageSlideshow : MonoBehaviour
 {
-    public Image[] images;        // Array para almacenar las imágenes
-    public float transitionTime = 1f; // Duración de la transición
-    public float displayTime = 3f;    // Tiempo que cada imagen permanece visible
+    public Image[] images;
+    public float transitionTime = 1f;
+    public float displayTime = 3f;
 
     private int currentIndex = 0;
 
     void Start()
     {
-        // Inicializa todas las imágenes con alfa 0, excepto la primera
         foreach (Image img in images) img.color = new Color(1, 1, 1, 0);
         images[currentIndex].color = new Color(1, 1, 1, 1);
         StartCoroutine(SlideShowCoroutine());
@@ -20,11 +20,19 @@ public class ImageSlideshow : MonoBehaviour
 
     IEnumerator SlideShowCoroutine()
     {
-        while (true)
+        while (currentIndex < images.Length)
         {
             yield return new WaitForSeconds(displayTime);
             StartCoroutine(FadeOut(images[currentIndex]));
-            currentIndex = (currentIndex + 1) % images.Length;
+            currentIndex++;
+            
+            if (currentIndex >= images.Length)
+            {
+                yield return new WaitForSeconds(transitionTime);
+                SceneManager.LoadScene("Nivel1");
+                yield break;
+            }
+
             StartCoroutine(FadeIn(images[currentIndex]));
         }
     }
