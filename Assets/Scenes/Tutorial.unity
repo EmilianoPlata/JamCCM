@@ -330,9 +330,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1fb24359acbc8540b62db928c20dcba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  images: []
+  images:
+  - {fileID: 1114437211}
+  - {fileID: 1137142667}
+  - {fileID: 1457730915}
+  - {fileID: 777519848}
+  - {fileID: 286394137}
+  - {fileID: 1247538515}
   transitionTime: 1
-  displayTime: 3
+  displayTime: 5
 --- !u!4 &751670210
 Transform:
   m_ObjectHideFlags: 0
