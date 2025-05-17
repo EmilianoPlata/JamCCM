@@ -1,8 +1,14 @@
 .contenedorPrincipal {
+    align-self: center;
+    justify-content: space-between;
 }
 
 .logoTriki {
     background-image: url("project://database/Assets/Imagenes/TrikiTrakatelas.png?fileID=2800000&guid=65b40b0f8b8890f4f94ea7fd8cd42a19&type=3#TrikiTrakatelas");
+    width: 1200px;
+    max-width: 1200px;
+    height: 600px;
+    max-height: 600px;
 }
 
 .boton {
@@ -64,6 +70,7 @@
 
 .belowCointainer {
     justify-content: flex-end;
+    width: 100%;
 }
 
 .creditButton:hover {
@@ -75,4 +82,8 @@
 .creditButton:active {
     -unity-background-image-tint-color: rgb(38, 34, 34);
     background-color: rgba(101, 89, 89, 0);
+}
+
+.contenedorBotones {
+    justify-content: space-between;
 }
