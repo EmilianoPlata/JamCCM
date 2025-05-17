@@ -1,8 +1,8 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UIResume.uss?fileID=7433441132597879392&amp;guid=80b728456d6e4d848b5b634e3303f5e6&amp;type=3#UIResume" />
+    <Style src="project://database/Assets/UI/UIResume.uss?fileID=7433441132597879392&amp;guid=80b728456d6e4d848b5b634e3303f5e6&amp;type=3#UIResume" />
     <engine:VisualElement name="ContenedorPrincipal" class="contenedorPrincipal" style="flex-grow: 1;">
         <engine:VisualElement name="Resumen" class="resumen" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/SimplePixelUI/artwork/colorCustomizible/rounded/Background_CC_rounded.png?fileID=2800000&amp;guid=8117ad03e7d28324f97b6eddfdcd1e1d&amp;type=3#Background_CC_rounded&quot;); -unity-background-image-tint-color: rgb(63, 147, 73); background-color: rgba(0, 0, 0, 0);">
-            <engine:Label text="Label" class="contenedorTexto texto" style="border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); background-color: rgba(9, 7, 7, 0.39); border-top-left-radius: 70px; border-top-right-radius: 70px; border-bottom-right-radius: 0; border-bottom-left-radius: 0;" />
+            <engine:Label text="Resumen" class="contenedorTexto texto" style="border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); background-color: rgba(9, 7, 7, 0.39); border-top-left-radius: 70px; border-top-right-radius: 70px; border-bottom-right-radius: 0; border-bottom-left-radius: 0;" />
             <engine:VisualElement name="ContenedorDonas" class="contenedorDonas" style="flex-grow: 1;">
                 <engine:VisualElement name="iconDonas1" class="iconDonas" style="flex-grow: 1;" />
                 <engine:VisualElement name="iconDonas2" class="iconDonas" style="flex-grow: 1;" />
