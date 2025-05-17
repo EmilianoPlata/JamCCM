@@ -6,15 +6,22 @@ public class IdleRepeat : MonoBehaviour
     private float timer = 0f;
     [SerializeField] private float repeatDelay = 10f;
 
+
+
     void Update()
     {
+        AnimatorStateInfo animacion = animator.GetCurrentAnimatorStateInfo(0);
         timer += Time.deltaTime;
 
-        if (timer >= repeatDelay)
+        if (animacion.IsName("Idel"))
         {
-            animator.Play("Idle", 0, 0f); // Reproduce desde el inicio
-            timer = 0f;
+            if (timer >= repeatDelay)
+            {
+                animator.Play("Idle", 0, 0f); // Reproduce desde el inicio
+                timer = 0f;
+            }
         }
+        
     }
 }
 

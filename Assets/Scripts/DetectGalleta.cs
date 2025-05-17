@@ -7,16 +7,20 @@ public class DetectGalleta : MonoBehaviour
     private string mensaje = "Comido";
     private Rigidbody2D rbGalleta;
     private string nameScene;
+    [SerializeField] private Animator anim;
 
-    private void Start() {
-    GameObject parentGalleta = GameObject.FindGameObjectWithTag("Galleta");
-    rbGalleta = parentGalleta.GetComponent<Rigidbody2D>();
-    nameScene = SceneManager.GetActiveScene().name;
-    if (nameScene == "Nivel8") {
-        float fuerzaSoplado = 240f; // Puedes ajustar este valor
-        int direccion = 1; // Usa -1 para izquierda, 1 para derecha
-        Vector2 fuerza = new Vector2(fuerzaSoplado * direccion, 0);
-        rbGalleta.AddForce(fuerza, ForceMode2D.Impulse);
+    private void Start()
+    {
+        GameObject parentGalleta = GameObject.FindGameObjectWithTag("Galleta");
+        rbGalleta = parentGalleta.GetComponent<Rigidbody2D>();
+        nameScene = SceneManager.GetActiveScene().name;
+
+        if (nameScene == "Nivel8")
+        {
+            float fuerzaSoplado = 240f; // Puedes ajustar este valor
+            int direccion = 1; // Usa -1 para izquierda, 1 para derecha
+            Vector2 fuerza = new Vector2(fuerzaSoplado * direccion, 0);
+            rbGalleta.AddForce(fuerza, ForceMode2D.Impulse);
         }
     }
 
@@ -25,8 +29,9 @@ public class DetectGalleta : MonoBehaviour
     {
         if (collision.CompareTag("Galleta"))
         {
+            anim.SetBool("Comer", true);
             Debug.Log(mensaje);
-            Destroy(collision.gameObject, 0.3f);
+            Destroy(collision.gameObject, 0.1f);
             StartCoroutine(CargarSiguienteEscenaDespuesDeEspera(5f));
         }
     }

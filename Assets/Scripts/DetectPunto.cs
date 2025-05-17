@@ -1,6 +1,6 @@
 using UnityEngine;
 public class DetectPunto : MonoBehaviour  {
-    private int puntos = 0; // Inicializado correctamente
+    public static int puntos = 0; // Inicializado correctamente
     
     void OnTriggerEnter2D(Collider2D collision)
     {
