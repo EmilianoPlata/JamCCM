@@ -12,6 +12,14 @@ public class BocaTrigger : MonoBehaviour
         }
     }
 
+    void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Galleta"))
+        {
+            animator.SetBool("Cerca", true);
+        }
+    }
+
     void OnTriggerExit2D(Collider2D collision)
     {
         animator.SetBool("Cerca", false);

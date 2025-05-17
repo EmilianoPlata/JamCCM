@@ -29,6 +29,7 @@ public class DetectGalleta : MonoBehaviour
     {
         if (collision.CompareTag("Galleta"))
         {
+            collision.GetComponent<Invisible>()?.MarcarComoRecolectada();
             anim.SetBool("Comer", true);
             Debug.Log(mensaje);
             Destroy(collision.gameObject, 0.1f);
@@ -39,7 +40,8 @@ public class DetectGalleta : MonoBehaviour
     private IEnumerator CargarSiguienteEscenaDespuesDeEspera(float segundos)
     {
         yield return new WaitForSeconds(segundos);
-        GlobalVariables.indexScene += 1;
-        SceneManager.LoadScene(GlobalVariables.indexScene);
+        int indexActual = SceneManager.GetActiveScene().buildIndex;
+        int indexProximo = indexActual + 1;
+        SceneManager.LoadScene(indexProximo);
     }
 }
