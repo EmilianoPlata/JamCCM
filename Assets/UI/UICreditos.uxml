@@ -1,6 +1,27 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UICreditos.uss?fileID=7433441132597879392&amp;guid=c619fe7e0f8b1e24d8f9d9f6c2020c49&amp;type=3#UICreditos" />
-    <engine:VisualElement name="ContenedorPrincipal" style="flex-grow: 1;">
-        <engine:VisualElement name="CreditosContenedor" class="contenedorCreditos" style="flex-grow: 1;" />
+    <Style src="project://database/Assets/UICreditos.uss?fileID=7433441132597879392&amp;guid=4102a319da8554c4dadd4f75e6c24005&amp;type=3#UICreditos" />
+    <engine:VisualElement name="ContenedorPrincipal" class="contenedorPrincipal" style="flex-grow: 1;">
+        <engine:VisualElement name="CreditosPopUp" class="creditosPopUp" style="flex-grow: 1; width: 1080px; height: 1000px; max-width: 1080px; max-height: 1000px; align-self: center; justify-content: center; align-items: center; background-image: url(&quot;project://database/Assets/SimplePixelUI/artwork/colorCustomizible/rounded/Background_CC_rounded.png?fileID=2800000&amp;guid=8117ad03e7d28324f97b6eddfdcd1e1d&amp;type=3#Background_CC_rounded&quot;); -unity-background-image-tint-color: rgb(76, 173, 87); background-color: rgba(0, 0, 0, 0);">
+            <engine:VisualElement name="HeaderContainer" class="heaaderContainer" style="flex-grow: 1; border-top-left-radius: 70px; border-top-right-radius: 70px;">
+                <engine:VisualElement name="TitleCenter" class="titleCenter" style="flex-grow: 1; align-self: center; align-items: flex-start; justify-content: space-between;">
+                    <engine:Label text="Creditos" name="CreditosTitle" class="title" style="height: 144px; width: 735px; align-self: center; -unity-text-align: upper-right; white-space: pre;" />
+                </engine:VisualElement>
+                <engine:Button name="CloseButton" icon-image="project://database/Assets/SimplePixelUI/artwork/icons/icons_color_customizible.png?fileID=-2381500297140005776&amp;guid=2a01691a87fedbe4aa6de6f1c0c0f3d4&amp;type=3#isonswhite2_12" class="closeButton" style="background-image: url(&quot;project://database/Assets/SimplePixelUI/artwork/halfcustomizible/square/Buttons/button_small_1.png?fileID=2800000&amp;guid=3ec822cb93351794ea0f21230f0d5d03&amp;type=3#button_small_1&quot;); width: 100px; height: 100px; max-height: 100px; max-width: 100px; border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0);" />
+            </engine:VisualElement>
+            <engine:VisualElement name="Names" class="names" style="flex-grow: 1; align-self: flex-start; margin-left: 80px;">
+                <engine:VisualElement name="ContainerNames" class="containerNames" style="flex-grow: 1;">
+                    <engine:VisualElement name="Icon" class="icon" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Imagenes/Chocoreta.png?fileID=2800000&amp;guid=fbde959d440651c449bf80fb5bca6290&amp;type=3#Chocoreta&quot;);" />
+                    <engine:Label text="Emiliano Plata" class="icon namesTitulo" style="font-size: 50px;" />
+                </engine:VisualElement>
+                <engine:VisualElement name="ContainerNames" class="containerNames" style="flex-grow: 1;">
+                    <engine:VisualElement name="Icon" class="icon" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Imagenes/Dona.png?fileID=2800000&amp;guid=6e41d632b3f1ccd41a536df0c2841da5&amp;type=3#Dona&quot;);" />
+                    <engine:Label text="Erik Castro" class="namesTitulo" />
+                </engine:VisualElement>
+                <engine:VisualElement name="ContainerNames" class="containerNames" style="flex-grow: 1;">
+                    <engine:VisualElement name="Icon" class="icon" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Imagenes/Ara%C3%B1a.png?fileID=-1314004168889401887&amp;guid=b6104470d26aab44c87c24ddd1edf0b8&amp;type=3#Araña_0&quot;);" />
+                    <engine:Label text="Emanuel Hernandez" class="namesTitulo" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
     </engine:VisualElement>
 </engine:UXML>
