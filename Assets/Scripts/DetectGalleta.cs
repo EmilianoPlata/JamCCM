@@ -33,13 +33,19 @@ public class DetectGalleta : MonoBehaviour
             anim.SetBool("Comer", true);
             Debug.Log(mensaje);
             Destroy(collision.gameObject, 0.1f);
-            StartCoroutine(CargarSiguienteEscenaDespuesDeEspera(5f));
+            StartCoroutine(CargarSiguienteEscenaDespuesDeEspera(3f));
         }
     }
 
     private IEnumerator CargarSiguienteEscenaDespuesDeEspera(float segundos)
     {
-        yield return new WaitForSeconds(segundos);
-        SceneManager.LoadScene("ResumeLevel");
+        if (!GlobalVariables.endlessMode)
+        {
+            yield return new WaitForSeconds(segundos);
+            SceneManager.LoadScene("ResumeLevel");
+        }
+        else
+            yield return new WaitForSeconds(segundos);
+            SceneManager.LoadScene("EndlessMode");
     }
 }
