@@ -39,13 +39,15 @@ public class DetectGalleta : MonoBehaviour
 
     private IEnumerator CargarSiguienteEscenaDespuesDeEspera(float segundos)
     {
-        if (!GlobalVariables.endlessMode)
+        if (GlobalVariables.endlessMode == false)
         {
             yield return new WaitForSeconds(segundos);
             SceneManager.LoadScene("ResumeLevel");
         }
         else
+        {
             yield return new WaitForSeconds(segundos);
             SceneManager.LoadScene("EndlessMode");
+        }
     }
 }

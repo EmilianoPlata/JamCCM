@@ -331,3 +331,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
+  menuGameOver: {fileID: 0}
+  cortador: {fileID: 0}
+  chocoreta: {fileID: 11887716579969081}
