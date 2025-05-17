@@ -40,8 +40,6 @@ public class DetectGalleta : MonoBehaviour
     private IEnumerator CargarSiguienteEscenaDespuesDeEspera(float segundos)
     {
         yield return new WaitForSeconds(segundos);
-        int indexActual = SceneManager.GetActiveScene().buildIndex;
-        int indexProximo = indexActual + 1;
-        SceneManager.LoadScene(indexProximo);
+        SceneManager.LoadScene("ResumeLevel");
     }
 }
