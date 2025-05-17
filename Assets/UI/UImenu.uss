@@ -4,7 +4,7 @@
 }
 
 .logoTriki {
-    background-image: url("project://database/Assets/Imagenes/TrikiTrakatelas.png?fileID=2800000&guid=65b40b0f8b8890f4f94ea7fd8cd42a19&type=3#TrikiTrakatelas");
+    background-image: url("project://database/Assets/Imagenes/Titulo.png?fileID=2800000&guid=bd0562997e5e95146b4fc7426470c41a&type=3#Titulo");
     width: 1200px;
     max-width: 1200px;
     height: 600px;
