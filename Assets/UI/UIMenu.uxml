@@ -5,6 +5,7 @@
         <engine:VisualElement name="ContenedorBotones" class="contenedorBotones" style="flex-grow: 1;">
             <engine:Button text="Play" name="PlayButton" class="boton" />
             <engine:Button text="ENDless" name="EndlessMode" class="boton" />
+            <engine:Button text="Tutorial" name="btnTutorial" class="boton" style="font-size: 55px;" />
         </engine:VisualElement>
         <engine:VisualElement name="BelowContainer" class="belowCointainer" style="flex-grow: 1;">
             <engine:Button name="CreditButton" double-click-selects-word="false" icon-image="project://database/Assets/SimplePixelUI/artwork/icons/icons_color_customizible.png?fileID=-4598059474086584248&amp;guid=2a01691a87fedbe4aa6de6f1c0c0f3d4&amp;type=3#isonswhite2_26" class="creditButton" style="width: 150px;" />

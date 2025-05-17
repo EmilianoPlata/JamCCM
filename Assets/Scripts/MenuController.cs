@@ -9,6 +9,7 @@ public class MenuController : MonoBehaviour
     private Button btnJugar;
     private Button btnEndless;
     private Button btnCreditos;
+    private Button btnTutorial;
     private UIDocument uIDocumentCreditos;
     private VisualElement rootCreditos;
     private VisualElement rootNiveles;
@@ -22,6 +23,7 @@ public class MenuController : MonoBehaviour
         btnJugar = root.Q<Button>("PlayButton");
         btnCreditos = root.Q<Button>("CreditButton");
         btnEndless = root.Q<Button>("EndlessMode");
+        btnTutorial = root.Q<Button>("btnTutorial");
 
         GameObject uiCreditosGO = GameObject.Find("UICreditos");
         uIDocumentCreditos = uiCreditosGO.GetComponent<UIDocument>();
@@ -34,6 +36,7 @@ public class MenuController : MonoBehaviour
         btnJugar.clicked += Juego;
         btnCreditos.clicked += Creditos;
         btnEndless.clicked += CargarModoEndless;
+        btnTutorial.clicked += CargarTutorial;
     }
 
     private void Juego()
@@ -48,7 +51,8 @@ public class MenuController : MonoBehaviour
             contenedorPopUp.visible = true;
     }
 
-    private void CargarModoEndless() {
+    private void CargarModoEndless()
+    {
         InicializarInventario();
         GlobalVariables.endlessMode = true;
         SceneManager.LoadScene(2);
@@ -65,10 +69,10 @@ public class MenuController : MonoBehaviour
         if (contenedorPopUp != null)
             contenedorPopUp.visible = true;
     }
-    
+
     private void InicializarInventario()
     {
-          // Limpiar listas por si acaso
+        // Limpiar listas por si acaso
         InventarioManager.ListaObjetos.Clear();
         InventarioManager.InventarioJugador.Clear();
 
@@ -119,5 +123,10 @@ public class MenuController : MonoBehaviour
             120,
             "reintento_icon"
         );
+    }
+
+    private void CargarTutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
     }
 }
