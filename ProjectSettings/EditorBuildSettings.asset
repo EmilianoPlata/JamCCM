@@ -35,6 +35,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WalkthroughtGameScenes/Nivel9.unity
     guid: 7a80e0e41e921464da5f0e4652dc0293
+  - enabled: 1
+    path: Assets/Scenes/WalkthroughtGameScenes/Nivel10.unity
+    guid: ea84f5c5ffc231e4aa9e3d3c7d24f7c0
+  - enabled: 1
+    path: Assets/Scenes/WalkthroughtGameScenes/Nivel11.unity
+    guid: 7c5a9df56b90b274aba1dc1a018692f5
+  - enabled: 1
+    path: Assets/Scenes/WalkthroughtGameScenes/Nivel12.unity
+    guid: 60ae24eec11bfa44bb119adc3d12ac4c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
