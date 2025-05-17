@@ -9,6 +9,9 @@ public class MenuController : MonoBehaviour
     private Button btnCreditos;
     private UIDocument uIDocumentCreditos;
     private VisualElement rootCreditos;
+    private VisualElement rootNiveles;
+
+    private UIDocument uIDocumentNiveles;
 
     void OnEnable()
     {
@@ -21,6 +24,10 @@ public class MenuController : MonoBehaviour
         uIDocumentCreditos = uiCreditosGO.GetComponent<UIDocument>();
         rootCreditos = uIDocumentCreditos.rootVisualElement;
 
+        GameObject uiNivelesGO = GameObject.Find("UINiveles");
+        uIDocumentNiveles = uiNivelesGO.GetComponent<UIDocument>();
+        rootNiveles = uIDocumentNiveles.rootVisualElement;
+
         btnJugar.clicked += Juego;
         btnCreditos.clicked += Creditos;
 
@@ -28,7 +35,13 @@ public class MenuController : MonoBehaviour
 
     private void Juego()
     {
-        SceneManager.LoadScene("Nivel1");
+        VisualElement root = GetComponent<UIDocument>().rootVisualElement;
+        root.visible = false;
+        rootNiveles.visible = true;
+
+        var contenedorPopUp = rootNiveles.Q<VisualElement>("ContenedorPrincipal");
+        if (contenedorPopUp != null)
+            contenedorPopUp.visible = true;
     }
 
     private void Creditos()

@@ -1,0 +1,35 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UIniveles.uss?fileID=7433441132597879392&amp;guid=e6772033be9558d4e8caa2e9f9f5e40a&amp;type=3#UIniveles" />
+    <engine:VisualElement name="ContenedorPrincipal" class="contenedorPrincipal" style="flex-grow: 1;">
+        <engine:VisualElement name="NivelesContenedor" class="NivelesContenedor" style="flex-grow: 1;">
+            <engine:VisualElement name="HeaderContainer" class="heaaderContainer" style="flex-grow: 1; border-top-left-radius: 70px; border-top-right-radius: 70px;">
+                <engine:VisualElement name="TitleCenter" class="titleCenter" style="flex-grow: 1; align-self: center; align-items: flex-start; justify-content: space-between;">
+                    <engine:Label text="Niveles" name="CreditosTitle" class="title" style="height: 144px; width: 735px; align-self: center; -unity-text-align: upper-right; white-space: pre;" />
+                </engine:VisualElement>
+                <engine:Button name="CloseButton" icon-image="project://database/Assets/SimplePixelUI/artwork/icons/icons_color_customizible.png?fileID=-2381500297140005776&amp;guid=2a01691a87fedbe4aa6de6f1c0c0f3d4&amp;type=3#isonswhite2_12" class="closeButton" style="background-image: url(&quot;project://database/Assets/SimplePixelUI/artwork/halfcustomizible/square/Buttons/button_small_1.png?fileID=2800000&amp;guid=3ec822cb93351794ea0f21230f0d5d03&amp;type=3#button_small_1&quot;); width: 100px; height: 100px; max-height: 100px; max-width: 100px; border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0);" />
+            </engine:VisualElement>
+            <engine:ScrollView name="Scroll" class="scroll" style="height: 625px; max-height: 625px;">
+                <engine:VisualElement name="ContenedorBoton" class="contenedorBotones" style="flex-grow: 1;">
+                    <engine:Button text="1" name="1" class="botonNiveles" />
+                    <engine:Button text="2" name="2" class="botonNiveles" />
+                    <engine:Button text="3" name="3" class="botonNiveles" />
+                </engine:VisualElement>
+                <engine:VisualElement name="ContenedorBoton" class="contenedorBotones" style="flex-grow: 1;">
+                    <engine:Button text="4" name="4" class="botonNiveles" />
+                    <engine:Button text="5" name="5" class="botonNiveles" />
+                    <engine:Button text="6" name="6" class="botonNiveles" />
+                </engine:VisualElement>
+                <engine:VisualElement name="ContenedorBoton" class="contenedorBotones" style="flex-grow: 1;">
+                    <engine:Button text="7" name="7" class="botonNiveles" />
+                    <engine:Button text="8" name="8" class="botonNiveles" />
+                    <engine:Button text="9" name="9" class="botonNiveles" />
+                </engine:VisualElement>
+                <engine:VisualElement name="ContenedorBoton" class="contenedorBotones" style="flex-grow: 1;">
+                    <engine:Button text="10" name="10" class="botonNiveles" />
+                    <engine:Button text="11" name="11" class="botonNiveles" />
+                    <engine:Button text="12" name="12" class="botonNiveles" />
+                </engine:VisualElement>
+            </engine:ScrollView>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>
