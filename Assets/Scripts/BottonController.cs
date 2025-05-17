@@ -26,8 +26,14 @@ public class BottonController : MonoBehaviour
 
     public void Reininiciar()
     {
+        DetectPunto.puntos = 0;
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    
+    public void Menu()
+    {
+        SceneManager.LoadScene("PantallaInicio");
     }
 
 
