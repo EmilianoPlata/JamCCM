@@ -1,0 +1,148 @@
+.contenedorPrincipal {
+    align-self: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.creditosPopUp {
+    -unity-background-image-tint-color: rgba(49, 33, 33, 0.85);
+    background-color: rgba(0, 0, 0, 0.28);
+    width: 1080px;
+    max-width: 1080px;
+    height: 1050px;
+    max-height: 1050px;
+}
+
+.title {
+    font-size: 100px;
+    -unity-font-definition: url("project://database/Assets/SimplePixelUI/fonts/Font1/pixelfont.ttf?fileID=12800000&guid=b6349d08a5335cd4aa534282435d11cc&type=3#pixelfont");
+    color: rgb(255, 255, 255);
+    -unity-text-outline-width: 4px;
+    -unity-text-outline-color: rgb(0, 0, 0);
+    height: 200px;
+    align-self: stretch;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-height: 200px;
+    align-content: center;
+    -unity-text-align: upper-center;
+}
+
+.heaaderContainer {
+    flex-direction: row;
+    height: 200px;
+    max-height: 200px;
+    width: 1070px;
+    max-width: 1070px;
+    background-color: rgba(0, 0, 0, 0.29);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    justify-content: space-between;
+}
+
+.closeButton {
+    background-color: rgba(0, 0, 0, 0);
+    -unity-background-image-tint-color: rgba(255, 0, 0, 0.65);
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.containerNames {
+    flex-direction: row;
+    align-self: flex-start;
+}
+
+.names {
+    align-self: stretch;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: auto;
+}
+
+.icon {
+    width: 200px;
+    max-width: 200px;
+    height: 200px;
+    max-height: 200px;
+}
+
+.closeButton:hover {
+    transition-timing-function: ease-in-out;
+    scale: 1.2 1.2;
+}
+
+.titlecontainer {
+    align-self: center;
+}
+
+.botonComprar {
+    width: 150px;
+    height: 150px;
+    max-width: 150px;
+    max-height: 150px;
+    background-image: url("project://database/Assets/SimplePixelUI/artwork/colorCustomizible/square/Buttons/button_2.png?fileID=2800000&guid=17bd7baa51c566f4dbc8839abd07fbb3&type=3#button_2");
+    background-color: rgba(49, 122, 232, 0);
+    -unity-background-image-tint-color: rgb(58, 251, 247);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.botonComprar:hover {
+    scale: 1.2 1.2;
+}
+
+.descripcion {
+    font-size: 20px;
+    -unity-font-definition: url("project://database/Assets/SimplePixelUI/fonts/Font1/pixelfont.ttf?fileID=12800000&guid=b6349d08a5335cd4aa534282435d11cc&type=3#pixelfont");
+    width: 500px;
+    max-width: 500px;
+    height: 200px;
+    max-height: 200px;
+    color: rgb(255, 255, 255);
+    -unity-text-outline-width: 1px;
+    -unity-text-outline-color: rgb(0, 0, 0);
+}
+
+.siguinteRondaBoton {
+    background-image: url("project://database/Assets/SimplePixelUI/artwork/colorCustomizible/rounded/buttons/button2_rounded_CC.png?fileID=2800000&guid=145f9f42fbe978947a25b213c84e7c2b&type=3#button2_rounded_CC");
+    width: 300px;
+    max-width: 300px;
+    height: 150px;
+    max-height: 150px;
+    color: rgb(255, 255, 255);
+    -unity-text-outline-width: 2px;
+    -unity-text-outline-color: rgb(0, 0, 0);
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    margin-bottom: 60px;
+}
+
+.centar {
+    align-self: center;
+}
+
+.siguinteRondaBoton:hover {
+    transition-timing-function: ease-in-out;
+    scale: 1.2 1.2;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.siguinteRondaBoton:active {
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    -unity-background-image-tint-color: rgba(57, 57, 57, 0.94);
+    background-color: rgba(172, 169, 169, 0);
+}

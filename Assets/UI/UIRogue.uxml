@@ -1,0 +1,23 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/TiendaUI.uss?fileID=7433441132597879392&amp;guid=4a237377ff89e7e48bac57507ae066e1&amp;type=3#TiendaUI" />
+    <engine:VisualElement name="ContenedorPrincipal" class="contenedorPrincipal" style="flex-grow: 1;">
+        <engine:VisualElement name="CreditosPopUp" class="creditosPopUp" style="flex-grow: 1; width: 1080px; height: 700px; max-width: 1080px; max-height: 700px; align-self: center; justify-content: center; align-items: center; background-image: url(&quot;project://database/Assets/SimplePixelUI/artwork/colorCustomizible/rounded/Background_CC_rounded.png?fileID=2800000&amp;guid=8117ad03e7d28324f97b6eddfdcd1e1d&amp;type=3#Background_CC_rounded&quot;); -unity-background-image-tint-color: rgb(76, 173, 87); background-color: rgba(0, 0, 0, 0);">
+            <engine:VisualElement name="HeaderContainer" class="heaaderContainer" style="flex-grow: 1; border-top-left-radius: 70px; border-top-right-radius: 70px;">
+                <engine:VisualElement name="TitleCenter" class="titleCenter titlecontainer" style="flex-grow: 1; align-self: center; align-items: flex-start; justify-content: space-between;">
+                    <engine:Label text="TIENDA " name="CreditosTitle" class="title" style="height: 144px; width: 735px; align-self: center; -unity-text-align: upper-center; white-space: pre; flex-direction: column;" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="Names" class="names" style="flex-grow: 1; align-self: flex-end; margin-left: 80px; justify-content: space-around; align-items: flex-start; width: 1000px; max-width: 1000px; height: 653px; max-height: 800px;">
+                <engine:VisualElement name="ContainerNames" class="containerNames" style="flex-grow: 1; width: 1000px; max-width: 1000px; height: 250px; max-height: 250px; align-self: flex-start;">
+                    <engine:VisualElement name="Icon" class="icon" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Imagenes/Dona.png?fileID=2800000&amp;guid=6e41d632b3f1ccd41a536df0c2841da5&amp;type=3#Dona&quot;);" />
+                    <engine:Label text="Este Objeto hace esto: Costo 10 $" name="Descripcion" class="descripcion" style="text-overflow: ellipsis; white-space: normal; font-size: 35px; height: 179px; width: 486px;" />
+                    <engine:Label text="10$" name="Precio" parse-escape-sequences="false" style="color: rgb(255, 255, 255); font-size: 40px; -unity-font-definition: url(&quot;project://database/Assets/SimplePixelUI/fonts/Font1/pixelfont.ttf?fileID=12800000&amp;guid=b6349d08a5335cd4aa534282435d11cc&amp;type=3#pixelfont&quot;); -unity-text-outline-width: 4px; -unity-text-outline-color: rgb(0, 0, 0);" />
+                    <engine:Button icon-image="project://database/Assets/SimplePixelUI/artwork/icons/icons_color_customizible.png?fileID=-6064698589780549783&amp;guid=2a01691a87fedbe4aa6de6f1c0c0f3d4&amp;type=3#isonswhite2_1" name="ComprarBoton" class="botonComprar" style="-unity-background-image-tint-color: rgb(53, 111, 109);" />
+                </engine:VisualElement>
+                <engine:VisualElement name="Centrar" class="centar" style="flex-grow: 1;">
+                    <engine:Button text="Siguiente Nivel" name="SiguienteRondaBoton" class="siguinteRondaBoton" style="-unity-background-image-tint-color: rgb(53, 111, 109); font-size: 20px; -unity-font-definition: url(&quot;project://database/Assets/SimplePixelUI/fonts/Font1/pixelfont.ttf?fileID=12800000&amp;guid=b6349d08a5335cd4aa534282435d11cc&amp;type=3#pixelfont&quot;); width: 300px; max-width: 300px; height: 150px;" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>
